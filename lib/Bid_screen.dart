@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'auction.dart';
 
-class BidPage extends StatelessWidget {
+class BidScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -210,7 +211,7 @@ class BidPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           Text(
-                            '£0.50',
+                            '£2.25',
                             style: TextStyle(
                               color: Color(0xfff2bd74),
                             ),
@@ -242,7 +243,10 @@ class BidPage extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
                       onPressed: () {
-                        /*...*/
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ListingPage()));
                       },
                       child: Text(
                         "VIEW",

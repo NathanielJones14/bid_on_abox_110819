@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Home.dart';
-import 'Tips.dart';
-import 'Basket.dart';
-import 'Bid.dart';
-import 'Recipes.dart';
+import 'Home_screen.dart';
+import 'Tips_screen.dart';
+import 'Basket_screen.dart';
+import 'Bid_screen.dart';
+import 'Recipes_screen.dart';
 import 'utils/colours.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
@@ -48,13 +48,13 @@ void main() {
                 color: copy_02Color, fontWeight: FontWeight.w700, fontSize: 32),
             //AppBar Text
             headline: TextStyle(
-                color: copy_02Color, fontWeight: FontWeight.w700, fontSize: 24),
+                color: copy_02Color, fontWeight: FontWeight.w300, fontSize: 24),
             //Team names
             subtitle: TextStyle(
                 color: copy_02Color, fontWeight: FontWeight.w300, fontSize: 18),
 
             subhead: TextStyle(
-                color: copy_01Color, fontWeight: FontWeight.w500, fontSize: 16),
+                color: copy_01Color, fontWeight: FontWeight.w300, fontSize: 16),
 
             body1: TextStyle(
                 color: copy_01Color, fontWeight: FontWeight.w400, fontSize: 16),
@@ -84,7 +84,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int _page = 0;
   final _pageOption = [
-    BidPage(),
+    BidScreen(),
     BasketPage(),
     HomePage(),
     RecipesPage(),

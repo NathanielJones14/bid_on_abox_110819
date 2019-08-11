@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 //in order to ensure consistency across development
 
 final brand_01Color = const Color(0xFF46e087);
-final accent_01Color = const Color(0xFF9DD39F);
+final accent_01Color = const Color(0xFF46e087);
 final accent_02Color = const Color(0xFF8BBEB2);
 final accent_03Color = const Color(0xFFF2BD74);
 final copy_01Color = const Color(0xFF707070);
